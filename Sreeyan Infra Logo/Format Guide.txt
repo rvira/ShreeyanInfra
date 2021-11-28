@@ -1,0 +1,49 @@
+Folders Arrangement:
+Sreeyan Infra Logo Files
+	logo_colour
+		JPEG
+			icon + wordmark (inline - stacked).jpg
+			icon + wordmark (inline).jpg
+			icon + wordmark (top).jpg
+			icon.jpg
+			wordmark.jpg
+		PDF
+			icon + wordmark (inline - stacked).pdf
+			icon + wordmark (inline).pdf
+			icon + wordmark (top).pdf
+			icon.pdf
+			wordmark.pdf
+		PNG
+			icon + wordmark (inline - stacked).png
+			icon + wordmark (inline).png
+			icon + wordmark (top).png
+			icon.png
+			wordmark.png
+	logo_dark
+		icon + wordmark (inline - stacked)-dark.png
+		icon + wordmark (inline)-dark.png
+		icon + wordmark (top)-dark.png
+		icon-dark.png
+		wordmark-dark.png
+	logo_light
+		icon + wordmark (inline - stacked)-light.png
+		icon + wordmark (inline)-light.png
+		icon + wordmark (top)-light.png
+		icon-light.png
+		wordmark-light.png
+	master file
+		logo_sreeyan_infra.ai
+		logo_sreeyan_infra.eps
+	Format Guide.txt(This File)
+
+All the different variants are being provided in different formats according to needs:
+
+	EDITABLE
+-> SVG – A true vector format that can be edited with Inkscape, Illustrator, CorelDraw, or any other vector graphics application.
+-> AI – Another true vector format, only it is proprietary to Adobe, so it can really only used with Illustrator.
+-> EPS – This is another editable format, not necessarily a true vector format.
+-> PDF – Another editable file that works very similarly to Adobe Illustrator format. The benefit with PDF though is that it’s not proprietary, meaning it can work with any vector graphics software.
+
+	READY TO USE
+PNG-> PNGs can be directly uploaded to a website for use as a logo, and since they have a transparent background, they’ll lay nicely on top of whatever color, pattern, image or video is being used as the background.
+JPG-> It is a raster format often used for photographs on the web. JPG files are web friendly because the files are typically smaller.
