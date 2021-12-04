@@ -1,0 +1,67 @@
+:root{
+    --white: #EEEEEE;
+    --golden: #FFD369;
+    --light-grey: #393E46;
+    --dark-grey: #222831;
+
+    --body-font: 1.rem;
+}
+
+body{
+    background-image: url('../img/background-images/home-background.jpg');
+    background-size: cover;
+    background-position: top left;
+}
+
+.about-wrapper{
+    background-color: var(--white);
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+    margin-left: 0 auto;
+    width: 90%;
+    top: 15%;
+    right: 0;
+}
+
+.about-wrapper .wrapper{
+    width: 86%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+
+.about-wrapper .wrapper .sidebar{
+    order:1;
+}
+
+.about-wrapper .wrapper .projects{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    order:3;
+}
+
+.about-wrapper .wrapper .projects .item{
+    max-width: 50%;
+}
+
+.about-wrapper .wrapper .projects .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about-wrapper .wrapper .content{
+    order: 2;
+}
+
+@media (min-width: 600px){
+    .about-wrapper .wrapper{
+        grid-template-columns: 3% 50% 47%;
+    }
+
+    .about-wrapper .wrapper .projects .item{
+        grid-template-columns:(2,1fr);
+    }
+}
