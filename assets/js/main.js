@@ -49,3 +49,16 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+//Contact Form
+const inputs = document.getElementsByClassName('form-control');
+
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener("focus", function (event){
+    this.nextElementSibling.classList.add("active")
+  }); 
+  inputs[i].addEventListener("focusout", function(event) {
+  if (this.value === "") {
+   this.nextElementSibling.classList.remove("active");
+  }})
+}

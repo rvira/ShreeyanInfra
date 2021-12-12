@@ -1,0 +1,109 @@
+:root{
+    --white: #EEEEEE;
+    --golden: #FFD369;
+    --light-grey: #393E46;
+    --dark-grey: #222831;
+
+    --body-font: 1.rem;
+}
+
+.project-main{
+    padding-top: 2.25rem;
+    padding-bottom: 3.25rem;
+    width: 86%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.project-main h1{ 
+    text-align: center;
+}
+
+.project-main .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-main .wrapper .item{
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+
+.project-main .wrapper .item:not(:last-child){
+    margin-bottom: 2.5rem;
+}
+
+.project-main .wrapper .item img{
+    width:100%;
+    max-width: 731px;
+    display: block;
+    
+}
+
+.project-main .wrapper .item .content{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    max-width: 640px;
+    background-color: var(--white);
+    border: 2px solid;
+    border-radius: 2px;
+    border-color: var(--golden);
+    border-top: 0;
+}
+
+.project-main .wrapper .item .content h2{
+    margin-top: 0;
+    margin-bottom: 13.5px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.project-main .wrapper .item .content p{
+    margin-top: 0;
+    text-align: center;
+    line-height: 1.7;
+}
+
+@media (min-width: 700px){
+    .project-main .wrapper .item{
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .project-main .wrapper .item img{
+        width: 80%;
+    }
+
+    .project-main .wrapper .item .content{
+        padding: 2rem;
+        position: absolute;
+        right: 1%;
+        top: 8%;
+        border: 2px solid;
+        border-radius: 2px;
+        border-color: var(--golden);
+    }
+
+    .project-main .wrapper .item .content h2{
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    .project-main .wrapper .item .content p{
+        text-align: left;
+    }
+
+    .project-main .wrapper .item:nth-child(2) img{
+        order: 2;
+    }
+    .project-main .wrapper .item:nth-child(2) .content{
+        order: 1;
+    }
+}
