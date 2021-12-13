@@ -99,11 +99,19 @@
     .project-main .wrapper .item .content p{
         text-align: left;
     }
-
-    .project-main .wrapper .item:nth-child(2) img{
-        order: 2;
+    
+    .project-main .wrapper .item:nth-child(2),
+    .project-main .wrapper .item:nth-child(4){
+        transform: rotate(180deg);
     }
-    .project-main .wrapper .item:nth-child(2) .content{
-        order: 1;
+
+    .project-main .wrapper .item:nth-child(2) .content,
+    .project-main .wrapper .item:nth-child(4) .content{
+        transform: rotate(180deg);
+    }
+
+    .project-main .wrapper .item:nth-child(2) img,
+    .project-main .wrapper .item:nth-child(4) img{
+        transform: rotate(180deg);
     }
 }
