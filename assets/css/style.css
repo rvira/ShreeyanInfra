@@ -148,9 +148,7 @@ a{
     }
 }
 
-.navbar nav{
-    display: none;
-}
+
 
 .header-menu{
     list-style-type: none;
@@ -203,6 +201,7 @@ a{
 }
 
 @media (max-width: 599px){
+    
     .header-menu{
  
         width: 90%;
@@ -237,6 +236,10 @@ a{
         position: fixed;
         z-index: 20;
         right: 7.5%;
+    }
+
+    .navbar nav{
+        display: none;
     }
 }
 
