@@ -19,6 +19,10 @@
     font-family: 'Lora', serif, 'Tangerine', cursive;
 }
 
+*:focus {
+    outline: none;
+}
+
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -130,6 +134,12 @@ a{
 .navbar .logo{
     display: block;
     width: 150px;
+}
+
+.navbar .image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 @media (min-width: 600px){
@@ -597,7 +607,10 @@ a{
         text-align: center;
     }
 }
+
+
 .slide .slide__main{
+    
     align-items: center;
     height: 100%;
 }
@@ -911,7 +924,7 @@ footer img {
     margin-right: auto;
 }
 
-br{
+footer br{
     content: "";
     margin: 2em;
     display: block;
