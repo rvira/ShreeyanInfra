@@ -120,6 +120,8 @@ body{
 /*Team*/
 .team{
     width: 86%;
+    padding-top: 1.25rem;
+    padding-bottom: 3.25rem;
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto; 
@@ -127,6 +129,8 @@ body{
 
 .team .image {
     width: 100%;
+    object-fit: contain;
+    z-index: 10;
 }
 .team .image img{
     width: 100%;
@@ -146,10 +150,13 @@ body{
     border-radius: 4px;
     margin-top: -7rem;
     border-color: var(--golden);
+    background-color: var(--white);
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
     height: max-content;
+    position: relative;
+    z-index: 1;
 }
 
 .team .wrapper .pop-up .other-h1{
@@ -337,4 +344,5 @@ textarea:focus,
         margin-left: 68%;
     }
 }
+
 

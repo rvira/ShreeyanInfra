@@ -111,18 +111,23 @@ a{
 }
 
 /* Header */
-.navbar {
+.header-navbar {
     background-color: #fff;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    -webkit-animation: move-down 1s;
-            animation: move-down 1s;
 }
 
-.navbar .wrapper{
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.header-navbar .wrapper{
     width: 90%;
     height: 25px; 
-    max-width: 1114px;
+    width: 1114px;
     margin-left: auto;
     margin-right: auto;
     
@@ -131,29 +136,30 @@ a{
     align-items: center;
 }
 
-.navbar .logo{
+.header-navbar .logo{
     display: block;
     width: 150px;
+    object-fit: contain;
 }
 
-.navbar .image{
+.header-navbar .image{
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
 @media (min-width: 600px){
-    .navbar .logo{
+    .header-navbar .logo{
         width: 192px;
     }
 }
 
-.navbar .hamburger-icon{
+.header-navbar .hamburger-icon{
     cursor: pointer;
 }
 
 @media (min-width: 600px){
-    .navbar .hamburger-icon{
+    .header-navbar .hamburger-icon{
         display: none;
     }
 }
@@ -170,7 +176,7 @@ a{
 }
 
 @media (min-width: 600px){
-    .navbar nav{
+    .header-navbar nav{
         display: block;
     }
 
@@ -248,7 +254,7 @@ a{
         right: 7.5%;
     }
 
-    .navbar nav{
+    .header-navbar nav{
         display: none;
     }
 }
@@ -532,7 +538,7 @@ a{
     margin-bottom: 2rem;
 }
 
-.curr-projects .wrapper button{
+.curr-projects .wrapper .button{
     order: 8;
 }
 
@@ -560,54 +566,63 @@ a{
 }
 
 @media (min-width: 720px){
-    .curr-projects .wrapper button{
+    .curr-projects .wrapper .button{
         grid-column: 3 / 3;
         grid-row: 1;
         margin-right: 0;
-    }
-
-    
+    }  
 }
 
 .curr-projects .wrapper .item{
     width: 100%;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .curr-projects .wrapper .item img{
     right: 0;
     width: 100%;
     object-fit: contain;
+
 }
 
 .curr-projects .wrapper .content{
     width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 5%;
+    text-align: center;
 }
 .curr-projects .wrapper .content h2{
 
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 0.5rem;
 }
 
 .curr-projects .wrapper .content p{
     padding-top: 1.75rem;
-    padding-bottom: 1.5rem;
 }
 
 .curr-projects .wrapper .content a{
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     color: var(--dark-grey);
     font-weight: 500;
-    padding-bottom: 0.5rem;
+
     right: 0%;
 }
 @media (min-width: 600px){
+    .curr-projects .wrapper .item img{
+        order: 2;
+    }
+
     .curr-projects .wrapper .content{
-        text-align: center;
+        text-align: left;
+    }
+
+    .slide .slide__button{
+        padding: 1rem;
     }
 }
-
 
 .slide .slide__main{
     
@@ -625,6 +640,10 @@ a{
    
 }
 
+.slide .slide__button:focus{
+    outline: none;
+}
+
 .slide .slide__arrow{
     width: 2rem;
     height: 2rem;
@@ -633,13 +652,27 @@ a{
 
 .slide .prev{
     left: 0;
+    margin-top: 25%;
 }
 .slide .next{
     right: 0;
+    margin-top: 25%;
+    padding-left: 5%;
+}
+
+.slide .slide__items{
+    display: -webkit-inline-box;
 }
 
 .slide .slide__item{
     display: none;
+    padding-right: -5%;
+}
+
+.slide .slide__item .item{
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
 }
 
 .slide .slide__dot{
@@ -822,19 +855,9 @@ a{
 
 
 /*footer*/
-*, *::before,*::after{
-    margin:0; 
-    padding:0;
-    box-sizing: border-box;
-    outline: none; 
-    border:none;
-    text-decoration: none;
-    font-family: 'Lora', serif, 'Tangerine', cursive;
-}
-
 .footer-basic {
     padding:40px 0;
-    background-color:#393E46;
+    background-color: var(--dark-grey);
     color:white;
 }
   
@@ -855,6 +878,7 @@ a{
  
 .footer-basic li {
     padding:0 10px;
+    display: inline-block;
 }
   
 .footer-basic ul a {
@@ -883,7 +907,7 @@ a{
     display:inline-block;
     text-align:center;
     margin:0 8px;
-    color:white;
+    color:var(--white);
     opacity:0.75;
 }
   
