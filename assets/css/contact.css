@@ -68,6 +68,15 @@ body{
     text-align: center;
 }
 
+.about-wrapper .wrapper h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    order: 1;
+    margin-top: 2rem;
+}
+
+
 .about-wrapper .wrapper .projects .last-item .other-h1{
     font-family: 'Lora', serif;
     font-weight: 400;
@@ -83,6 +92,7 @@ body{
 .about-wrapper .wrapper .content{
     order: 2;
 }
+
 
 @media (min-width: 800px){
     .about-wrapper,
@@ -127,6 +137,13 @@ body{
     margin-right: auto; 
 }
 
+.team h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    order: 1;
+    margin-top: 2rem;
+}
 .team .image {
     width: 100%;
     object-fit: contain;
@@ -185,6 +202,11 @@ body{
     font-size: 2.5rem;
 }
 .contact-wrapper .whyus h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    order: 1;
+    margin-top: 2rem;
     display: inline;
 
 }
@@ -226,6 +248,15 @@ body{
     margin-right: auto;
     padding-top: 1.5rem;
 }
+
+.contact-wrapper .contact h1{
+font-family: 'Tangerine', cursive;
+font-size: 5rem;
+font-weight: 400;
+order: 1;
+margin-top: 2rem;
+}
+
 
 .contact-wrapper .contact .wrapper{
     width: 86%;
@@ -331,8 +362,10 @@ textarea:focus,
     margin-top: 2rem;
     margin-bottom: 0;
     display: initial;
-    
+    float: right; 
 }
+
+
 @media (min-width: 900px){
     .send_form{
         margin-left: 55%;
