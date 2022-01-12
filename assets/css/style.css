@@ -127,7 +127,7 @@ a{
 .header-navbar .wrapper{
     width: 90%;
     height: 25px; 
-    width: 1114px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     
@@ -621,6 +621,13 @@ a{
 
     .slide .slide__button{
         padding: 1rem;
+    }
+
+    .slide .prev{
+        margin-top: 50%;
+    }
+    .slide .next{
+        margin-top: 50%;
     }
 }
 
