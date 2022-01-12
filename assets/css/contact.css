@@ -353,6 +353,7 @@ label {
 input:focus,
 textarea:focus,
 .form-control:focus{
+    border-radius: 2;
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
